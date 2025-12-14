@@ -55,27 +55,6 @@ mark {
 </style>
 """, unsafe_allow_html=True)
 
-def highlight_abusive_words(text: str):
-    words = text.split()
-    base_pred, base_probs = predict(text, tokenizer, encoder, classifier)
-    base_score = base_probs[1]
-
-    highlighted = []
-    for i, w in enumerate(words):
-        masked = words.copy()
-        masked[i] = "[MASK]"
-        masked_text = " ".join(masked)
-        _, probs = predict(masked_text, tokenizer, encoder, classifier)
-        score_drop = base_score - probs[1]
-
-        if score_drop > 0.15:  # threshold
-            highlighted.append(f"<mark style='background-color:#ffb3b3'>{w}</mark>")
-        else:
-            highlighted.append(w)
-
-    return " ".join(highlighted)
-
-
 st.sidebar.title("⚙️ Menu")
 menu = st.sidebar.radio(
     "Pilih Menu",
@@ -117,9 +96,6 @@ if menu == "Single Text Classification":
             st.markdown(f"{'⚠️' if is_hate else '✅'} <span class='{'label-bahaya' if is_hate else 'label-aman'}'>{label}</span>", unsafe_allow_html=True)
             st.write(f"**Confidence:** {confidence:.2%}")
             st.divider()
-
-            st.subheader("🔍 Highlight Kata Bermasalah")
-            st.markdown(highlight_abusive_words(text), unsafe_allow_html=True)
 
             st.subheader("📊 Probabilitas Tiap Kelas")
             for i, label_name in ID2LABEL.items():
