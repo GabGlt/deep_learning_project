@@ -1,0 +1,10 @@
+              precision    recall  f1-score   support
+
+     Neutral     0.8794    0.8089    0.8427       586
+Hate_Abusive     0.8560    0.9111    0.8827       731
+
+    accuracy                         0.8656      1317
+   macro avg     0.8677    0.8600    0.8627      1317
+weighted avg     0.8664    0.8656    0.8649      1317
+
+Accuracy: 0.8656
