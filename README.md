@@ -1,1 +1,1 @@
-"deep_learning_project" 
+Final Project for Deep Learning Course
