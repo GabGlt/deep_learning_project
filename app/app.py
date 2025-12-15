@@ -151,7 +151,6 @@ elif menu == "About":
         - Fitur:
             - Single text classification
             - Batch CSV prediction
-            - Logic-based abusive word highlighting
 
         ⚠️ Model dapat bias dan tidak 100% akurat.
     """)
