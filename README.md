@@ -36,10 +36,10 @@ use_simcse: bool = False
 
 To run the app on your local machine, follow these steps:
 
-1. **Activate your Python environment**:
+1. **Activate your Python environment (adjust the path to your own environment)**:
 
 ```bash
-& "D:/Deep Learning/environments/deep_learning/Scripts/Activate.ps1"
+& "PATH/TO/YOUR/ENV/Scripts/Activate.ps1"
 ```
 
 2. **Navigate to the app folder**:
