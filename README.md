@@ -56,10 +56,6 @@ streamlit run app.py
 
 4. **Open the app in your browser**:
 
-```bash
-streamlit run app.py
-```
-
 After running the above command, Streamlit will display a local URL in the terminal, usually:
 ```bash
 http://localhost:8501
@@ -67,6 +63,6 @@ http://localhost:8501
 Open this URL in your browser to start interacting with the app.
 
 
-### 2. Run the Streamlit App Locally
+### 3. Access the Deployed App
 The app is also deployed online and can be accessed here:
 https://indobert-hate-speech-classifier.streamlit.app/
