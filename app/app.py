@@ -69,7 +69,7 @@ if menu == "Single Text Classification":
             """
             1. Masukkan teks (komentar, tweet, dsb.) pada kotak teks.
             2. Klik tombol **Analisis**.
-            3. Sistem menampilkan label, confidence, dan highlight kata bermasalah.
+            3. Sistem menampilkan label dan confidence.
             """
         )
 
